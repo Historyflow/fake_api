@@ -77,7 +77,7 @@ app.get("/api/elements/1018/text", function (req, res) {
 app.get("/api/elements/1001", function (req, res) {
   res.sendFile("test_data/jsons/scipio_africanus.json", options);
 });
-app.get("/api/elements/1018/text", function (req, res) {
+app.get("/api/elements/1001/text", function (req, res) {
   res.sendFile("test_data/jsons/scipio_africanus_text.json", options);
 });
 
