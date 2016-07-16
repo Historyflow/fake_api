@@ -13,7 +13,7 @@
       {
         "name": "Дата",
         "type": "text",
-        "body": "218 год до н. э. — 201 год до н. э."
+        "body": "509 год до н. э. — 27 год до н. э."
       },
       {
         "name": "Столица",
@@ -37,10 +37,15 @@
   },
   "start_date": "-509-01-01",
   "end_date": "-27-01-01",
-  "type": { "name": "hist_region", "label": "Исторический регион" },
+  "class": { "name": "region", "label": "регион" },
+  "type": {
+    "name": "hist_region",
+    "label": "Исторический регион"
+  },
   "text": "",
   "children": [
     {"id": 10001, "weight": 2 }
   ],
+  "connections": [],
   "shapes": [11]
 }

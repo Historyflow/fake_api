@@ -27,7 +27,7 @@
       {
         "name": "Итог",
         "type": "text",
-        "body": "Победа Рима"
+        "body": "Победа Карфагена"
       },
       {
         "name": "Противники",
@@ -98,9 +98,11 @@
   },
   "start_date": "-216-08-02",
   "end_date": "-216-08-02",
+  "class": { "name": "fact", "label": "факт" },
   "type": { "name": "battle", "label": "сражение" },
   "text": "",
   "children": [],
+  "connections": [],
   "parent": {
     "id": 1
   },

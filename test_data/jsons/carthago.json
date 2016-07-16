@@ -37,6 +37,7 @@
   },
   "start_date": "-814-01-01",
   "end_date": "-146-01-01",
+  "class": { "name": "region", "label": "регион" },
   "type": {
     "name": "hist_region",
     "label": "Исторический регион"
@@ -48,6 +49,7 @@
       "weight": 2
     }
   ],
+  "connections": [],
   "shapes": [
     71
   ]

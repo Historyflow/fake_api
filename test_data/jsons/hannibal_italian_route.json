@@ -7,11 +7,17 @@
   },
   "start_date": "-219-01-01",
   "end_date": "-218-10-01",
-  "type": { "name": "route", "label": "путь" },
+  "class": { "name": "route", "label": "путь" },
+  "type": { "name": "campaign", "label": "военная кампания" },
   "text": "",
-  "children": [],
+  "children": [
+    { "id": 9001, "weight": 2},
+    { "id": 9002, "weight": 2},
+    { "id": 9003, "weight": 2}
+  ],
+  "connections": [],
   "parent": {
     "id": 1
   },
-  "shapes": [1001]
+  "shapes": [10001]
 }
