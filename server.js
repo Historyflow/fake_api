@@ -63,6 +63,10 @@ app.get("/api/elements", function(req, res, next) {
   }
 });
 
+app.get("/api/search/elements", function(req, res) {
+  res.sendFile(`test_data/jsons/${req.query.name}.json`, options)
+});
+
 app.get("/api/elements/100", function(req, res) {
   res.sendFile("test_data/jsons/second_punic_war.json", options);
 });
