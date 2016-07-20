@@ -43,9 +43,9 @@
     "label": "Исторический регион"
   },
   "text": "",
-  "children": [
+  "children_ids": [
     {"id": 10001, "weight": 2 }
   ],
-  "connections": [],
+  "connections_ids": [],
   "shapes": [11]
 }

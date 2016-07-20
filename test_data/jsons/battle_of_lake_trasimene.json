@@ -98,8 +98,8 @@
   "class": { "name": "fact", "label": "факт" },
   "type": { "name": "battle", "label": "сражение" },
   "text": "",
-  "children": [],
-  "connections": [],
+  "children_ids": [],
+  "connections_ids": [],
   "parent": {
     "id": 1
   },

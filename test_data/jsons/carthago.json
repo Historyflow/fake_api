@@ -43,13 +43,13 @@
     "label": "Исторический регион"
   },
   "text": "",
-  "children": [
+  "children_ids": [
     {
       "id": 10002,
       "weight": 2
     }
   ],
-  "connections": [],
+  "connections_ids": [],
   "shapes": [
     71
   ]

@@ -1,5 +1,6 @@
 var http = require("http");
 var express = require("express");
+var jsonfile = require("jsonfile");
 
 const app = express();
 
@@ -37,7 +38,30 @@ app.get("/api/dicts", function(req, res) {
     }
   });
 });
-
+app.get("/api/elements", function(req, res, next) {
+  var output = { meta: {}, data: [] };
+  if (req.query.ids) {
+    var files = [
+      "test_data/jsons/roman_republic.json",
+      "test_data/jsons/carthago.json",
+      "test_data/jsons/battle_of_cannae.json",
+      "test_data/jsons/battle_of_the_trebia.json",
+      "test_data/jsons/battle_of_lake_trasimene.json",
+      "test_data/jsons/battle_of_zama.json",
+      "test_data/jsons/hannibal_italian_route.json",
+      "test_data/jsons/hannibal_barka.json",
+      "test_data/jsons/scipio_africanus.json"
+    ];
+    for(let path of files) {
+      var file = jsonfile.readFileSync(path);
+      output.data.push(file);
+    }
+    output.meta.count = output.data.length;
+    res.json(output);
+  } else {
+    next();
+  }
+});
 
 app.get("/api/elements/100", function(req, res) {
   res.sendFile("test_data/jsons/second_punic_war.json", options);

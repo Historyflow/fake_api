@@ -1,0 +1,16 @@
+{
+  "ecmaVersion": 6,
+  "libs": [
+    "browser"
+  ],
+  "loadEagerly": [
+    "node_modules/vue/dist/vue.js",
+    "node_modules/vuex/dist/vuex.js",
+    "node_modules/mapbox-gl/dist/mapbox-gl.js",
+    "node_modules/vue-resource/dist/vue-resource.js",
+    "node_modules/vue-router/dist/vue-router.js",
+    "node_modules/lodash/**/*.js",
+    "src/**/*.js",
+    "src/**/*.vue"
+  ]
+}

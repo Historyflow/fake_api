@@ -18,7 +18,8 @@
   "homepage": "https://github.com/soal/fake_api#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "express-history-api-fallback": "^2.0.0"
+    "express-history-api-fallback": "^2.0.0",
+    "jsonfile": "^2.3.1"
   },
   "devDependencies": {
     "eslint": "^3.1.0",

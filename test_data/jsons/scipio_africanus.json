@@ -36,7 +36,7 @@
     "label": "Полководец"
   },
   "text": "",
-  "connections": [9005, 100, 1],
+  "connections_ids": [9005, 100, 1],
   "shapes": [
     91
   ]

@@ -135,8 +135,8 @@
   "class": { "name": "process", "label": "процесс" },
   "type": { "name": "war", "label": "война" },
   "text": "",
-  "connections": [],
-  "children": [
+  "connections_ids": [],
+  "children_ids": [
     {"id": 1, "weight": 2 },
     {"id": 2, "weight": 2 },
     {"id": 3, "weight": 2 },

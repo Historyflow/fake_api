@@ -10,12 +10,12 @@
   "class": { "name": "route", "label": "путь" },
   "type": { "name": "campaign", "label": "военная кампания" },
   "text": "",
-  "children": [
+  "children_ids": [
     { "id": 9001, "weight": 2},
     { "id": 9002, "weight": 2},
     { "id": 9003, "weight": 2}
   ],
-  "connections": [],
+  "connections_ids": [],
   "parent": {
     "id": 1
   },
