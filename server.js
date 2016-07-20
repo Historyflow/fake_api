@@ -52,7 +52,7 @@ app.get("/api/elements", function(req, res, next) {
       "test_data/jsons/hannibal_barka.json",
       "test_data/jsons/scipio_africanus.json"
     ];
-    for(let path of files) {
+    for(var path of files) {
       var file = jsonfile.readFileSync(path);
       output.data.push(file);
     }
