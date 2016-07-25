@@ -22,8 +22,7 @@ app.use(function(req, res, next) {
   next();
 });
 app.get("/api/dicts", function(req, res) {
-  res.json({
-    data: {
+  res.satus(200).json({
       element_types: [
         {
           label: "сражение",
@@ -35,7 +34,6 @@ app.get("/api/dicts", function(req, res) {
         }
       ],
       default_element: 100
-    }
   });
 });
 app.get("/api/elements", function(req, res, next) {
@@ -70,51 +68,51 @@ app.get("/api/search/elements", function(req, res) {
 app.get("/api/elements/100", function(req, res) {
   res.sendFile("test_data/jsons/second_punic_war.json", options);
 });
-app.get("/api/elements/100/text", function(req, res) {
-  res.sendFile("test_data/jsons/second_punic_war_text.json", options);
-});
+// app.get("/api/elements/100/text", function(req, res) {
+//   res.sendFile("test_data/jsons/second_punic_war_text.json", options);
+// });
 
 app.get("/api/elements/1", function(req, res) {
   res.sendFile("test_data/jsons/roman_republic.json", options);
 });
-app.get("/api/elements/1/text", function(req, res) {
-  res.sendFile("test_data/jsons/roman_republic_text.json", options);
-});
+// app.get("/api/elements/1/text", function(req, res) {
+//   res.sendFile("test_data/jsons/roman_republic_text.json", options);
+// });
 
 app.get("/api/elements/7", function(req, res) {
   res.sendFile("test_data/jsons/carthago.json", options);
 });
-app.get("/api/elements/7/text", function(req, res) {
-  res.sendFile("test_data/jsons/carthago_text.json", options);
-});
+// app.get("/api/elements/7/text", function(req, res) {
+//   res.sendFile("test_data/jsons/carthago_text.json", options);
+// });
 
 app.get("/api/elements/9001", function(req, res) {
   res.sendFile("test_data/jsons/battle_of_cannae.json", options);
 });
-app.get("/api/elements/9001/text", function(req, res) {
-  res.sendFile("test_data/jsons/battle_of_cannae_text.json", options);
-});
+// app.get("/api/elements/9001/text", function(req, res) {
+//   res.sendFile("test_data/jsons/battle_of_cannae_text.json", options);
+// });
 
 app.get("/api/elements/9002", function(req, res) {
   res.sendFile("test_data/jsons/battle_of_the_trebia.json", options);
 });
-app.get("/api/elements/9002/text", function(req, res) {
-  res.sendFile("test_data/jsons/battle_of_the_trebia_text.json", options);
-});
+// app.get("/api/elements/9002/text", function(req, res) {
+//   res.sendFile("test_data/jsons/battle_of_the_trebia_text.json", options);
+// });
 
 app.get("/api/elements/9003", function(req, res) {
   res.sendFile("test_data/jsons/battle_of_lake_trasimene.json", options);
 });
-app.get("/api/elements/9003/text", function(req, res) {
-  res.sendFile("test_data/jsons/battle_of_lake_trasimene_text.json", options);
-});
+// app.get("/api/elements/9003/text", function(req, res) {
+//   res.sendFile("test_data/jsons/battle_of_lake_trasimene_text.json", options);
+// });
 
 app.get("/api/elements/9005", function(req, res) {
   res.sendFile("test_data/jsons/battle_of_zama.json", options);
 });
-app.get("/api/elements/9005/text", function(req, res) {
-  res.sendFile("test_data/jsons/battle_of_zama_text.json", options);
-});
+// app.get("/api/elements/9005/text", function(req, res) {
+//   res.sendFile("test_data/jsons/battle_of_zama_text.json", options);
+// });
 
 app.get("/api/elements/19001", function(req, res) {
   res.sendFile("test_data/jsons/hannibal_italian_route.json", options);
@@ -123,16 +121,16 @@ app.get("/api/elements/19001", function(req, res) {
 app.get("/api/elements/1018", function(req, res) {
   res.sendFile("test_data/jsons/hannibal_barka.json", options);
 });
-app.get("/api/elements/1018/text", function(req, res) {
-  res.sendFile("test_data/jsons/hannibal_barka_text.json", options);
-});
+// app.get("/api/elements/1018/text", function(req, res) {
+//   res.sendFile("test_data/jsons/hannibal_barka_text.json", options);
+// });
 
 app.get("/api/elements/1001", function(req, res) {
   res.sendFile("test_data/jsons/scipio_africanus.json", options);
 });
-app.get("/api/elements/1001/text", function(req, res) {
-  res.sendFile("test_data/jsons/scipio_africanus_text.json", options);
-});
+// app.get("/api/elements/1001/text", function(req, res) {
+//   res.sendFile("test_data/jsons/scipio_africanus_text.json", options);
+// });
 
 app.get("/api/shapes/101", function(req, res) {
   res.sendFile("test_data/shapes/battle_of_cannae.geojson", options);
