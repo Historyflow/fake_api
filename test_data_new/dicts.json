@@ -1,0 +1,102 @@
+{
+  "timestamp": 1477390003288,
+  "types": [
+    {
+      "id": 1,
+      "name": "вооружённый конфликт",
+      "types": [
+        {
+          "id": 2,
+          "name": "война"
+        },
+        {
+          "id": 3,
+          "name": "восстание"
+        },
+        {
+          "id": 4,
+          "name": "гражданская война"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "договор",
+      "types": [
+        {
+          "id": 6,
+          "name": "мирный договор"
+        },
+        {
+          "id": 7,
+          "name": "перемирие"
+        },
+        {
+          "id": 8,
+          "name": "договор об ограничении вооружений"
+        },
+        {
+          "id": 9,
+          "name": "договор о сотрудничестве"
+        },
+        {
+          "id": 10,
+          "name": "торговый договор"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "конференция",
+      "types": [
+        {
+          "id": 12,
+          "name": "научная конференция"
+        },
+        {
+          "id": 13,
+          "name": "спортивная конференция"
+        }
+      ]
+    }
+  ],
+  "default": 1,
+  "root_context": 1,
+  "link_types": [
+    {
+      "link_class_id": 1,
+      "link_class_name": "involvement",
+      "link_class_label": "участие",
+      "link_types": [
+        { "type_id": 10, "type_name": "сторона в войне" },
+        { "type_id": 11, "type_name": "участник войны" },
+        { "type_id": 12, "type_name": "командующий" }
+      ]
+    },
+    {
+      "link_class_id": 3,
+      "link_class_name": "connection",
+      "link_class_label": "связь",
+      "link_types": [
+        { "link_type_id": 30, "link_type_name": "брак", "variants": ["замужем за", "женат на", "жёны", "мужья"]}
+      ]
+    },
+    {
+      "link_class_id": 2,
+      "link_class_name": "child",
+      "link_class_label": "входящие",
+      "link_types": [
+        { "link_type_id": 20, "link_type_name": "сражение в войне" }
+      ]
+    },
+    {
+      "link_class_id": 2,
+      "link_class_name": "parent",
+      "link_class_label": "вхождение",
+      "link_types": [
+        { "link_type_id": 20, "link_type_name": "война" }
+      ]
+    },
+  ]
+}
+

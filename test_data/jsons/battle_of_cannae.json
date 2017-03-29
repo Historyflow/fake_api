@@ -106,5 +106,5 @@
   "parent": {
     "id": 1
   },
-  "shapes": [101]
+  "shapes_ids": [101]
 }

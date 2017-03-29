@@ -47,5 +47,5 @@
     {"id": 10001, "weight": 2 }
   ],
   "connections_ids": [],
-  "shapes": [11]
+  "shapes_ids": [11]
 }

@@ -22,18 +22,18 @@ app.use(function(req, res, next) {
   next();
 });
 app.get("/api/dicts", function(req, res) {
-  res.satus(200).json({
-      element_types: [
-        {
-          label: "сражение",
-          name: "battle"
-        },
-        {
-          label: "война",
-          name: "war"
-        }
-      ],
-      default_element: 100
+  res.json({
+    element_types: [
+      {
+        label: "сражение",
+        name: "battle"
+      },
+      {
+        label: "война",
+        name: "war"
+      }
+    ],
+    default_element: 100
   });
 });
 app.get("/api/elements", function(req, res, next) {
@@ -50,7 +50,7 @@ app.get("/api/elements", function(req, res, next) {
       "test_data/jsons/hannibal_barka.json",
       "test_data/jsons/scipio_africanus.json"
     ];
-    for(var path of files) {
+    for (var path of files) {
       var file = jsonfile.readFileSync(path);
       output.data.push(file);
     }
@@ -62,7 +62,7 @@ app.get("/api/elements", function(req, res, next) {
 });
 
 app.get("/api/search/elements", function(req, res) {
-  res.sendFile(`test_data/jsons/${req.query.name}.json`, options)
+  res.sendFile(`test_data/jsons/${req.query.name}.json`, options);
 });
 
 app.get("/api/elements/100", function(req, res) {
