@@ -1,9 +1,10 @@
 {
   "timestamp": 1477390003288,
+  "rootScenario": 0,
   "classes": [
     {
-      "class_name": "process",
-      "class_label": "процесс",
+      "className": "process",
+      "classLabel": "процесс",
       "types": [
         {
           "id": 1,
@@ -40,8 +41,8 @@
       ]
     },
     {
-      "class_name": "fact",
-      "class_label": "факт",
+      "className": "fact",
+      "classLabel": "факт",
       "types": [
         {
           "id": 5,
@@ -105,8 +106,8 @@
       ]
     },
     {
-      "class_name": "subject",
-      "class_label": "субъект",
+      "className": "subject",
+      "classLabel": "субъект",
       "types": [
         {
           "id": 40,
@@ -160,8 +161,8 @@
       ]
     },
     {
-      "class_name": "region",
-      "class_label": "регион",
+      "className": "region",
+      "classLabel": "регион",
       "types": [
         {
           "id": 50,
@@ -198,45 +199,44 @@
       ]
     },
     {
-      "class_name": "phenomenon",
-      "class_label": "феномен",
+      "className": "phenomenon",
+      "classLabel": "феномен",
       "types": []
     }
   ],
-  "root_context": 0,
-  "link_types": [
+  "linkTypes": [
     {
-      "link_class_id": 1,
-      "link_class_name": "involvement",
-      "link_class_label": "участие",
-      "link_types": [
-        { "type_id": 10, "type_name": "сторона в войне" },
-        { "type_id": 11, "type_name": "участник войны" },
-        { "type_id": 12, "type_name": "командующий" }
+      "linkClassId": 1,
+      "linkClassName": "involvement",
+      "linkClassLabel": "участие",
+      "linkTypes": [
+        { "typeId": 10, "typeName": "сторона в войне" },
+        { "typeId": 11, "typeName": "участник войны" },
+        { "typeId": 12, "typeName": "командующий" }
       ]
     },
     {
-      "link_class_id": 3,
-      "link_class_name": "connection",
-      "link_class_label": "связь",
-      "link_types": [
-        { "link_type_id": 30, "link_type_name": "брак", "variants": ["замужем за", "женат на", "жёны", "мужья"]}
+      "linkClassId": 3,
+      "linkClassName": "connection",
+      "linkClassLabel": "связь",
+      "linkTypes": [
+        { "linkTypeId": 30, "linkTypeName": "брак", "variants": ["замужем за", "женат на", "жёны", "мужья"]}
       ]
     },
     {
-      "link_class_id": 2,
-      "link_class_name": "child",
-      "link_class_label": "входящие",
-      "link_types": [
-        { "link_type_id": 20, "link_type_name": "сражение в войне" }
+      "linkClassId": 2,
+      "linkClassName": "child",
+      "linkClassLabel": "входящие",
+      "linkTypes": [
+        { "linkTypeId": 20, "linkTypeName": "сражение в войне" }
       ]
     },
     {
-      "link_class_id": 4,
-      "link_class_name": "parent",
-      "link_class_label": "вхождение",
-      "link_types": [
-        { "link_type_id": 40, "link_type_name": "война" }
+      "linkClassId": 4,
+      "linkClassName": "parent",
+      "linkClassLabel": "вхождение",
+      "linkTypes": [
+        { "linkTypeId": 40, "linkTypeName": "война" }
       ]
     }
   ]

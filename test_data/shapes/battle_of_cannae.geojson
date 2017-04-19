@@ -3,9 +3,13 @@
   "properties": {
     "id": "101",
     "title": "Battle_of_Cannae",
-    "marker-size": "medium",
-    "marker-color": "#1087bf",
-    "marker-symbol": ""
+    "type": "symbol",
+    "layout": {
+      "marker-size": "medium",
+      "marker-color": "#1087bf",
+      "marker-symbol": ""
+    },
+    "paint": {}
   },
   "geometry": {
     "coordinates": [
