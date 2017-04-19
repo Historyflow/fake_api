@@ -19,13 +19,13 @@ app.use(function(req, res, next) {
   next();
 });
 app.get("/api/dicts", function(req, res) {
-  res.sendFile("test_data_new/dicts.json")
+  res.sendFile("test_data_new/dicts.json", options)
 });
 app.get("/api/contexts/2000", function(req, res) {
-  res.sendFile("test_data/jsons/contexts/second_punic_war_context.json");
+  res.sendFile("test_data/jsons/contexts/second_punic_war_context.json", options);
 });
 app.get("/api/contexts/0", function(req, res) {
-  res.sendFile("test_data/jsons/contexts/world_hist_process.json");
+  res.sendFile("test_data/jsons/contexts/world_hist_process.json", options);
 });
 app.get("/api/elements", function(req, res, next) {
   var output = { meta: {}, data: [] };
