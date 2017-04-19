@@ -82,7 +82,7 @@
               "id": 32,
               "name": "power_zones_treaty",
               "label": "договор о разграничении сфер влияния"
-            },
+            }
           ]
         },
         {
@@ -238,7 +238,7 @@
       "link_types": [
         { "link_type_id": 40, "link_type_name": "война" }
       ]
-    },
+    }
   ]
 }
 
