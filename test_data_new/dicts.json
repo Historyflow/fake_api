@@ -1,67 +1,209 @@
 {
   "timestamp": 1477390003288,
-  "types": [
+  "classes": [
     {
-      "id": 1,
-      "name": "вооружённый конфликт",
+      "class_name": "process",
+      "class_label": "процесс",
       "types": [
         {
-          "id": 2,
-          "name": "война"
-        },
-        {
-          "id": 3,
-          "name": "восстание"
-        },
-        {
-          "id": 4,
-          "name": "гражданская война"
+          "id": 1,
+          "name": "вооружённый конфликт",
+          "label": "military_conflict",
+          "subtypes": [
+            {
+              "id": 2,
+              "name": "war",
+              "label": "война"
+            },
+            {
+              "id": 3,
+              "name": "rebellion",
+              "label": "восстание"
+            },
+            {
+              "id": 4,
+              "name": "civil_war",
+              "label": "гражданская война"
+            },
+            {
+              "id": 20,
+              "name": "battle",
+              "label": "сражение"
+            },
+            {
+              "id": 21,
+              "name": "siege",
+              "label": "осада"
+            }
+          ]
         }
       ]
     },
     {
-      "id": 5,
-      "name": "договор",
+      "class_name": "fact",
+      "class_label": "факт",
       "types": [
         {
-          "id": 6,
-          "name": "мирный договор"
+          "id": 5,
+          "name": "treaty",
+          "label": "договор",
+          "subtypes": [
+            {
+              "id": 6,
+              "name": "truce",
+              "label": "мирный договор"
+            },
+            {
+              "id": 7,
+              "name": "temp_truce",
+              "label": "перемирие"
+            },
+            {
+              "id": 8,
+              "name": "military_strength_treaty",
+              "label": "договор об ограничении вооружений"
+            },
+            {
+              "id": 9,
+              "name": "partnership_treaty",
+              "label": "договор о сотрудничестве"
+            },
+            {
+              "id": 10,
+              "name": "trade_treaty",
+              "label": "торговый договор"
+            },
+            {
+              "id": 31,
+              "name": "military_alliance",
+              "label": "военный альянс"
+            },
+            {
+              "id": 32,
+              "name": "power_zones_treaty",
+              "label": "договор о разграничении сфер влияния"
+            },
+          ]
         },
         {
-          "id": 7,
-          "name": "перемирие"
-        },
-        {
-          "id": 8,
-          "name": "договор об ограничении вооружений"
-        },
-        {
-          "id": 9,
-          "name": "договор о сотрудничестве"
-        },
-        {
-          "id": 10,
-          "name": "торговый договор"
+          "id": 11,
+          "name": "conference",
+          "label": "конференция",
+          "subtypes": [
+            {
+              "id": 12,
+              "name": "scientific_conference",
+              "label": "научная конференция"
+            },
+            {
+              "id": 13,
+              "name": "sports_conference",
+              "label": "спортивная конференция"
+            }
+          ]
         }
       ]
     },
     {
-      "id": 11,
-      "name": "конференция",
+      "class_name": "subject",
+      "class_label": "субъект",
       "types": [
         {
-          "id": 12,
-          "name": "научная конференция"
+          "id": 40,
+          "name": "persona",
+          "label": "персонаж",
+          "subtypes": [
+            {
+              "id": 41,
+              "name": "ruler",
+              "label": "правитель"
+            },
+            {
+              "id": 42,
+              "name": "military_leader",
+              "label": "командующий"
+            },
+            {
+              "id": 43,
+              "name": "polititian",
+              "label": "политик"
+            },
+            {
+              "id": 44,
+              "name": "state_persona",
+              "label": "государственный деятель"
+            },
+            {
+              "id": 45,
+              "name": "scientist",
+              "label": "учёный"
+            }
+          ]
         },
         {
-          "id": 13,
-          "name": "спортивная конференция"
+          "id": 50,
+          "name": "military_division",
+          "label": "военное подразделение",
+          "subtypes": [
+            {
+              "id": 51,
+              "name": "army",
+              "label": "армия"
+            },
+            {
+              "id": 52,
+              "name": "fleet",
+              "label": "флот"
+            }
+          ]
         }
       ]
+    },
+    {
+      "class_name": "region",
+      "class_label": "регион",
+      "types": [
+        {
+          "id": 50,
+          "name": "state",
+          "label": "государство"
+        },
+        {
+          "id": 51,
+          "name": "settlement",
+          "label": "поселение",
+          "subtypes": [
+            {
+              "id": 510,
+              "name": "city",
+              "label": "город"
+            },
+            {
+              "id": 511,
+              "name": "country",
+              "label": "деревня"
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "name": "tribe",
+          "label": "племя"
+        },
+        {
+          "id": 53,
+          "name": "tribe_union",
+          "label": "союз племён"
+        }
+      ]
+    },
+    {
+      "class_name": "phenomenon",
+      "class_label": "феномен",
+      "types": []
     }
   ],
-  "default": 1,
-  "root_context": 1,
+  "root_context": 0,
   "link_types": [
     {
       "link_class_id": 1,
@@ -90,11 +232,11 @@
       ]
     },
     {
-      "link_class_id": 2,
+      "link_class_id": 4,
       "link_class_name": "parent",
       "link_class_label": "вхождение",
       "link_types": [
-        { "link_type_id": 20, "link_type_name": "война" }
+        { "link_type_id": 40, "link_type_name": "война" }
       ]
     },
   ]

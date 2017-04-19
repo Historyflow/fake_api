@@ -1,0 +1,16 @@
+{
+  "id": 0,
+  "name": "world_hist_process",
+  "label": "мировой исторический процесс",
+  "rootElement": 0,
+  "info_fields": ["date", "place", "reason", "result", "changes", "rivals", "leaders", "military_leaders", "rivals_forces", "casualties"],
+  "start_date": "-218-01-01",
+  "end_date": "-201-01-01",
+  "elements_types": [2,4],
+  "links_types": [10,11,12,20,40],
+  "additional_ids": [],
+  "bbox": [],
+  "weight": 1,
+  "disable_others": false,
+  "dataset": [100,1,7]
+}

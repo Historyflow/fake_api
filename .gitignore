@@ -38,3 +38,6 @@ jspm_packages
 
 .vscode
 *.sublime-*
+*.DS_Store*
+
+*.tern-project*

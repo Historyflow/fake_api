@@ -1,13 +1,10 @@
-var http = require("http");
-var express = require("express");
-var jsonfile = require("jsonfile");
+const http = require("http");
+const express = require("express");
+const jsonfile = require("jsonfile");
 
 const app = express();
 
-const root = `${__dirname}/static`;
-app.use(express.static(root));
-
-var options = {
+const options = {
   root: __dirname,
   headers: {
     "x-timestamp": Date.now(),
@@ -22,19 +19,13 @@ app.use(function(req, res, next) {
   next();
 });
 app.get("/api/dicts", function(req, res) {
-  res.json({
-    element_types: [
-      {
-        label: "сражение",
-        name: "battle"
-      },
-      {
-        label: "война",
-        name: "war"
-      }
-    ],
-    default_element: 100
-  });
+  res.sendFile("test_data_new/dicts.json")
+});
+app.get("/api/contexts/2000", function(req, res) {
+  res.sendFile("test_data/jsons/contexts/second_punic_war_context.json");
+});
+app.get("/api/contexts/0", function(req, res) {
+  res.sendFile("test_data/jsons/contexts/world_hist_process.json");
 });
 app.get("/api/elements", function(req, res, next) {
   var output = { meta: {}, data: [] };
