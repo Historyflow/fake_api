@@ -1,0 +1,66 @@
+{
+  "id": 1,
+  "name": "string",
+  "label": "human readable string",
+  "desc": "string",
+  "text": "HTML string",
+  "weight": 2,
+  "info": {
+    "title": "string",
+    "blocks": [
+      {
+        "label": "string",
+        "name": "string",
+        "type": "string",
+        "body": "string"
+      },
+      {
+        "label": "string",
+        "name": "string",
+        "type": "string",
+        "blocks": [
+          {
+            "type": "links",
+            "links": [
+              {
+                "id": "string",
+                "label": "string",
+                "name": "string"
+               }
+            ]
+          },
+          {
+            "type": "text",
+            "body": "string"
+          }
+        ]
+      }
+    ]
+  },
+  "class": { "name": "string", "label": "string" },
+  "type": { "id": 1, "name": "string", "label": "string" },
+  "children_list": [
+    {
+      "id": 4,
+      "weight": 2,
+      "begin": "string with date",
+      "end":  "string with date"
+    }
+  ],
+  "connections_list": [
+    {
+      "id": 4,
+      "weight": 2,
+      "begin": "string with date",
+      "end":  "string with date"
+    }
+  ],
+  "shapes_list": [
+    {
+      "id": 4,
+      "bbox": [50.41, 20.11],
+      "begin": "string",
+      "end": "string"
+    }
+  ]
+}

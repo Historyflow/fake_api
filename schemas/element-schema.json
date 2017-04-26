@@ -1,0 +1,250 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "minProperties": 0,
+    "properties": {
+        "children_list": {
+            "id": "/properties/children_list",
+            "items": {
+                "id": "/properties/children_list/items",
+                "minProperties": 0,
+                "properties": {
+                    "begin": {
+                        "id": "/properties/children_list/items/properties/begin",
+                        "type": "string"
+                    },
+                    "end": {
+                        "id": "/properties/children_list/items/properties/end",
+                        "type": "string"
+                    },
+                    "id": {
+                        "id": "/properties/children_list/items/properties/id",
+                        "type": "integer"
+                    },
+                    "weight": {
+                        "id": "/properties/children_list/items/properties/weight",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "begin",
+                    "end",
+                    "id",
+                    "weight"
+                ],
+                "type": "object"
+            },
+            "minItems": 0,
+            "type": "array",
+            "uniqueItems": true
+        },
+        "class": {
+            "id": "/properties/class",
+            "minProperties": 0,
+            "properties": {
+                "label": {
+                    "id": "/properties/class/properties/label",
+                    "type": "string"
+                },
+                "name": {
+                    "id": "/properties/class/properties/name",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "label"
+            ],
+            "type": "object"
+        },
+        "connections_list": {
+            "id": "/properties/connections_list",
+            "items": {
+                "id": "/properties/connections_list/items",
+                "minProperties": 0,
+                "properties": {
+                    "begin": {
+                        "id": "/properties/connections_list/items/properties/begin",
+                        "type": "string"
+                    },
+                    "end": {
+                        "id": "/properties/connections_list/items/properties/end",
+                        "type": "string"
+                    },
+                    "id": {
+                        "id": "/properties/connections_list/items/properties/id",
+                        "type": "integer"
+                    },
+                    "weight": {
+                        "id": "/properties/connections_list/items/properties/weight",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "begin",
+                    "end",
+                    "id",
+                    "weight"
+                ],
+                "type": "object"
+            },
+            "minItems": 0,
+            "type": "array",
+            "uniqueItems": true
+        },
+        "desc": {
+            "id": "/properties/desc",
+            "type": "string"
+        },
+        "id": {
+            "id": "/properties/id",
+            "type": "integer"
+        },
+        "info": {
+            "id": "/properties/info",
+            "minProperties": 0,
+            "properties": {
+                "blocks": {
+                    "id": "/properties/info/properties/blocks",
+                    "items": {
+                        "id": "/properties/info/properties/blocks/items",
+                        "minProperties": 0,
+                        "properties": {
+                            "body": {
+                                "id": "/properties/info/properties/blocks/items/properties/body",
+                                "type": "string"
+                            },
+                            "label": {
+                                "id": "/properties/info/properties/blocks/items/properties/label",
+                                "type": "string"
+                            },
+                            "name": {
+                                "id": "/properties/info/properties/blocks/items/properties/name",
+                                "type": "string"
+                            },
+                            "type": {
+                                "id": "/properties/info/properties/blocks/items/properties/type",
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "body",
+                            "type",
+                            "name",
+                            "label"
+                        ],
+                        "type": "object"
+                    },
+                    "minItems": 0,
+                    "type": "array",
+                    "uniqueItems": true
+                },
+                "title": {
+                    "id": "/properties/info/properties/title",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "blocks",
+                "title"
+            ],
+            "type": "object"
+        },
+        "label": {
+            "id": "/properties/label",
+            "type": "string"
+        },
+        "name": {
+            "id": "/properties/name",
+            "type": "string"
+        },
+        "shapes_list": {
+            "id": "/properties/shapes_list",
+            "items": {
+                "id": "/properties/shapes_list/items",
+                "minProperties": 0,
+                "properties": {
+                    "bbox": {
+                        "id": "/properties/shapes_list/items/properties/bbox",
+                        "items": {
+                            "id": "/properties/shapes_list/items/properties/bbox/items",
+                            "type": "number"
+                        },
+                        "minItems": 0,
+                        "type": "array",
+                        "uniqueItems": true
+                    },
+                    "begin": {
+                        "id": "/properties/shapes_list/items/properties/begin",
+                        "type": "string"
+                    },
+                    "end": {
+                        "id": "/properties/shapes_list/items/properties/end",
+                        "type": "string"
+                    },
+                    "id": {
+                        "id": "/properties/shapes_list/items/properties/id",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "begin",
+                    "end",
+                    "id",
+                    "bbox"
+                ],
+                "type": "object"
+            },
+            "minItems": 0,
+            "type": "array",
+            "uniqueItems": true
+        },
+        "text": {
+            "id": "/properties/text",
+            "type": "string"
+        },
+        "type": {
+            "id": "/properties/type",
+            "minProperties": 0,
+            "properties": {
+                "id": {
+                    "id": "/properties/type/properties/id",
+                    "type": "integer"
+                },
+                "label": {
+                    "id": "/properties/type/properties/label",
+                    "type": "string"
+                },
+                "name": {
+                    "id": "/properties/type/properties/name",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "label",
+                "id",
+                "name"
+            ],
+            "type": "object"
+        },
+        "weight": {
+            "id": "/properties/weight",
+            "type": "integer"
+        }
+    },
+    "required": [
+        "info",
+        "connections_list",
+        "name",
+        "weight",
+        "children_list",
+        "text",
+        "class",
+        "label",
+        "type",
+        "id",
+        "desc"
+    ],
+    "type": "object"
+}
