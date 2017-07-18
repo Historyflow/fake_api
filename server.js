@@ -39,7 +39,8 @@ app.get("/api/public/elements", function(req, res, next) {
       "test_data/jsons/battle_of_zama.json",
       "test_data/jsons/hannibal_italian_route.json",
       "test_data/jsons/hannibal_barka.json",
-      "test_data/jsons/scipio_africanus.json"
+      "test_data/jsons/scipio_africanus.json",
+      "test_data/jsons/second_punic_war.json"
     ];
     for (var path of files) {
       var file = jsonfile.readFileSync(path);
